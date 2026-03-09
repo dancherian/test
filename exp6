@@ -1,0 +1,38 @@
+file1
+package studentpack;
+public class student {
+    private String name;
+    private int regNo;
+    // Setter methods
+    public void setName(String n) {
+        name = n;
+    }
+    public void setRegNo(int r) {
+        regNo = r;
+    }
+    // Getter methods
+    public String getName() {
+        return name;
+    }
+	public int getRegNo() {
+		// TODO Auto-generated method stub
+		return regNo;
+	}
+}
+
+
+
+
+file2
+package studentpack;
+
+import studentpack.student;
+public class packagee {
+    public static void main(String[] args) {
+        student s = new student();
+        s.setName("Abishek");
+        s.setRegNo(101);
+        System.out.println("Student Name: " + s.getName());
+        System.out.println("Register Number: " + s.getRegNo());
+    }
+}
